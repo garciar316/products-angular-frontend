@@ -1,4 +1,36 @@
-<!-- NG-ZORRO -->
-<a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a>
+<nz-layout class="layout">
+  <nz-sider nzCollapsible nzBreakpoint="lg" [nzCollapsedWidth]="0">
+    <div class="logo">
+      <span>
+        <em nz-icon nzType="crown" nzTheme="outline"></em> MyStore
+      </span>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <em nz-icon nzType="user"></em>
+        <span>nav 1</span>
+      </li>
+      <li nz-menu-item>
+        <em nz-icon nzType="video-camera"></em>
+        <span>nav 2</span>
+      </li>
+      <li nz-menu-item>
+        <em nz-icon nzType="upload"></em>
+        <span>nav 3</span>
+      </li>
+      <li nz-menu-item>
+        <em nz-icon nzType="user"></em>
+        <span>nav 4</span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header><h3>Tienda para visualizar los productos</h3></nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <app-list-products></app-list-products>
+      </div>
+    </nz-content>
+    <nz-footer>MyStore ©2022 Created By Sergio G</nz-footer>
+  </nz-layout>
+</nz-layout>
