@@ -5,7 +5,7 @@
     </nz-card>
 </div>
 <ng-template #coverTemplate>
-    <img alt="example" src="https://picsum.photos/200" />
+    <img alt="example" [src]="product.img" />
 </ng-template>
 <ng-template #actionPrice>
     $ {{ product.precio }}

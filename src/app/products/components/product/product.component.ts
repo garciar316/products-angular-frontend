@@ -12,4 +12,8 @@ export class ProductComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  generateRandom(): string {
+    return `https://picsum.photos/id/${ Math.floor((Math.random() * (100 - 1 + 1)) + 1) }/200`;
+  }
 }

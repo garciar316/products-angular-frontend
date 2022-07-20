@@ -9,6 +9,7 @@ for (let i = 0; i < 20; i++) {
         "descripcion": faker.lorem.sentence(),
         "precio": faker.commerce.price(),
         "cantidad": faker.random.numeric(),
+        "img": faker.image.abstract(300, 200, true)
     });
 }
 
