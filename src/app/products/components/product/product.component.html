@@ -1,0 +1,15 @@
+<div class="container">
+    <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionPrice, actionBuy]">
+        <nz-card-meta [nzTitle]="product.id + '. ' + product.nombre" [nzDescription]="product.descripcion">
+        </nz-card-meta>
+    </nz-card>
+</div>
+<ng-template #coverTemplate>
+    <img alt="example" src="https://picsum.photos/200" />
+</ng-template>
+<ng-template #actionPrice>
+    $ {{ product.precio }}
+</ng-template>
+<ng-template #actionBuy>
+    Comprar
+</ng-template>
